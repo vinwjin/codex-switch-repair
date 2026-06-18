@@ -1,0 +1,31 @@
+{
+  "name": "codex-switch-repair",
+  "version": "0.1.0",
+  "description": "交互式审计与修复 Codex + cc-switch 配置同步的维护工具（内容驱动识别登录态、动态通用片段、写前备份、脱敏输出）",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "type": "commonjs",
+  "main": "tools/repair-codex-switch-sync-core.js",
+  "scripts": {
+    "test": "node --test tools/repair-codex-switch-sync-tests.js tools/repair-codex-switch-sync-e2e.js",
+    "test:unit": "node --test tools/repair-codex-switch-sync-tests.js",
+    "test:e2e": "node --test tools/repair-codex-switch-sync-e2e.js",
+    "audit": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/repair-codex-switch-sync.ps1"
+  },
+  "files": [
+    "tools/repair-codex-switch-sync-core.js",
+    "tools/repair-codex-switch-sync.ps1",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "codex",
+    "cc-switch",
+    "config",
+    "toml",
+    "maintenance",
+    "repair"
+  ]
+}

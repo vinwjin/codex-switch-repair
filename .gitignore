@@ -1,0 +1,36 @@
+# 依赖 / 构建
+node_modules/
+*.log
+
+# 备份与运行时产物（可能含真实配置副本，绝不入库）
+cc-switch-codex-repair/
+*-backup/
+*.bak
+
+# 真实配置 / 凭据（双保险，永不入库）
+**/auth.json
+**/cc-switch.db
+**/config.toml
+*.env
+.env*
+
+# 调试 / 临时产物
+*-debug-*.json
+tools/*-error.log
+nul
+
+# 编辑器 / 系统
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# 本机工作记忆（含本机路径，公开前请人工复核）
+.workbuddy/
+.claude/
+
+# 本地知识库与历史归档（不公开同步）
+docs/
+legacy/
+AGENTS.md
+overview.md
